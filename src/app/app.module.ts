@@ -13,6 +13,14 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { PowerBoostCalculatorComponent } from './power-boost-calculator.component';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
+
+import { HeroJobAdComponent }   from './hero-job-ad.component';
+import { AdBannerComponent }    from './ad-banner.component';
+import { HeroProfileComponent } from './hero-profile.component';
+import { AdDirective }          from './ad.directive';
+import { AdService }            from './ad.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,12 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdDirective,
+    PowerBoostCalculatorComponent,
+    ExponentialStrengthPipe,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     ),
     
   ],
-  providers: [
+  providers: [AdService,
   ],
   bootstrap: [AppComponent],
   
